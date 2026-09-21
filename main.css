@@ -1,0 +1,143 @@
+/* Отключение анимации у тех, кто её отключил */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+    }
+}
+
+/* hover */
+@media (hover: hover) and (pointer: fine) {
+    details {
+        cursor: pointer;
+    }
+}
+
+/* Телефоны */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+/* Планшеты */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+/* Большие планшеты и маленькие мониторы */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    img {
+        width: 75%;
+    }
+}
+
+/* Компьютеры */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 25px;
+    }
+
+    img {
+        width: 50%;
+    }
+}
+
+:focus-visible {
+    outline: aqua 2.5px solid;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    background: #9381FF;
+    background: -webkit-linear-gradient(135deg, rgba(147, 129, 255, 1) 0%, rgba(173, 216, 230, 1) 100%);
+    background: linear-gradient(135deg, rgba(147, 129, 255, 1) 0%, rgba(173, 216, 230, 1) 100%);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1, section, footer {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    margin: 0.5em 1.25em;
+    border-radius: 10px;
+}
+
+section, footer {
+    font-size: 0.75em;
+}
+
+h1 {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    border-bottom: black solid 2.5px;
+    margin-bottom: 0.5em;
+}
+
+p, ul, details {
+    margin-top: 0.25em;
+    font-size: 1.15em;
+}
+
+summary {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    font-size: 1.15em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+ul {
+    margin-left: 0.75em;
+}
+
+#a {
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    display: flex;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    font-weight: 600;
+}
